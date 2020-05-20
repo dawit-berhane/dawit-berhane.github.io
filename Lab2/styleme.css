@@ -9,7 +9,7 @@ ol{
     font: italic 16px "Book Antiqua", "Georgia";
 }
 
-p::first-letter{
+#description::first-letter{
     font-size: 150%;
 }
 #mood{

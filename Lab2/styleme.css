@@ -8,3 +8,22 @@ h1,h2{
 ol{
     font: italic 16px "Book Antiqua", "Georgia";
 }
+
+p::first-letter{
+    font-size: 150%;
+}
+#mood{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    text-decoration-color: red;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+dl dt{
+    font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
+}

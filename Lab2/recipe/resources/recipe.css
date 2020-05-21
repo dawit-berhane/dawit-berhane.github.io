@@ -36,7 +36,7 @@ pre{
     font-style: italic;
     background-position: center;
 }
-#break::before{
+.break::before{
     content: "\A";
     white-space: pre;
 }

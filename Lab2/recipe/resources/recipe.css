@@ -1,6 +1,6 @@
 body{
     background-image: url("images/silverware.jpg");
-    background-repeat: repeat-x repeat-y;
+    background-repeat: repeat;
     background-attachment: fixed ;
     background-color: white;
     color:#404040;

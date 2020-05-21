@@ -1,0 +1,1 @@
+On this lab exercise different CSS styles are implemented on the html page file. Main objective was to add style to the html using CSS file only. And I used different ways to do that. namely simple selector, combinator, pseudo-class and pseudo-elements.

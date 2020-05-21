@@ -30,9 +30,6 @@ pre{
 #bold{
     font-weight: bold;
 }
-#underline{
-    text-decoration: underline;
-}
 .quoted{
     quotes: none;
     background-color: #FFFFA8;
@@ -45,4 +42,7 @@ pre{
 }
 .image-bullet{
     list-style-image: url("images/pie_bullet.png");
+}
+abbr{
+    text-decoration: underline;
 }

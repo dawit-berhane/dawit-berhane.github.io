@@ -20,7 +20,8 @@ h1{
    margin-right: auto;
    border: 4px solid gray ;
    border-radius: 20px;
-   height: 1000px;
+   height: 1050px;
+   overflow: hidden;
 }
 
 #criticReview{
@@ -37,6 +38,15 @@ h1{
    top: 0;
    right: 0;
    bottom: 0;
+}
+#pages{
+   position: absolute;
+   background-color: #A2B964;
+   width: 800px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   text-align: center;
 }
 #criticReviewTop{
    font-size: 48pt;
@@ -56,6 +66,7 @@ margin-left: 2%;
 }
 .comment{
    margin-bottom: 20pt;
+   clear: both;
 }
 .quoteBox{
    font-weight: bold;
@@ -74,9 +85,20 @@ margin-left: 2%;
    float: left;
    margin: 0 5px 0 0;
 }
-.pages{
-   position: absolute;
-   bottom: 0;
+
+#movieArea{
+   background-color: #A2B964;
+   width: 250px;
+}
+#movieArea > dl{
+   padding-left: 10pt;
+   padding-right: 10pt;
+   font-size: 8pt;
+   font-family: Arial, sans-serif;
+}
+dt{
+   font-weight: bold;
+   padding-top: 10pt;
 }
 
 #fixedPostion{

@@ -1,8 +1,9 @@
 .container{
     background-color: #f2f2f2;
-    padding: 50px 50px 50px 50px;
+    padding: 50px;
     border: 1px solid lightgrey;
     border-radius: 3px;
+    margin: 50px;
 }
 
 .block{
@@ -13,6 +14,7 @@
     border:  thin solid gray;
     border-radius: 10px;
     margin: 25px;
+    width: 100%;
 }
 .top{
     display: flex;
@@ -35,10 +37,12 @@ input[type="text"]{
     height: 25px;
     border-radius: 5px;
     border: thin solid;
+    width: 100%;
 }
 h3{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #DBB620;
+    font-size: 20pt;
 }
 button:hover{
     background-color: #DBB620;

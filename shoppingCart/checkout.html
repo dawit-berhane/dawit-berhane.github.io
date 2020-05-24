@@ -9,39 +9,43 @@
         <div class="container">
             <form action="https://google.com">
                 <div class="top">
-                    <div class="block">
-                        <h3>Personal Details</h3> 
-                        First Name: <input type="text" name="firstname"> <br>
-                        Last Name: <input type="text" name="lastname"> <br>
-                        E-mail: <input type="text" name="emial"> <br>
-                        Phone: <input type="tel" name="phone"> <br>
-                        User Name: <input type="text" name="username"> <br>
-                        Password: <input type="text" name="Password"> <br>
-                    </div>
+                    
+                        
+                        <fieldset class="block">
+                            <legend><h3>Personal Details</h3> </legend>
+                            First Name: <input type="text" name="firstname"> <br>
+                            Last Name: <input type="text" name="lastname"> <br>
+                            E-mail: <input type="text" name="emial"> <br>
+                            Phone: <input type="tel" name="phone"> <br>
+                            User Name: <input type="text" name="username"> <br>
+                            Password: <input type="text" name="Password"> <br>
+                        </fieldset>
+                      
+                    
             
-                    <div class="block">
-                        <h3> Billing Address </h3>
+                    <fieldset class="block">
+                       <legend><h3> Billing Address </h3></legend> 
                         Full Name: <input type="text" name="firstname"> <br>
                         Street: <input type="text" name="street"> <br>
                         City: <input type="text" name="city"> <br>
                         Zip/Postal code: <input type="text" name="zip"> <br>
                         State: <input type="text" name="state"> <br>
                         Country: <input type="text" name="country"> <br>
-                    </div>
+                    </fieldset>
                 </div>
                 
                 <div class="top">
-                    <div class="block">
-                        <h3> Shipping Address </h3>
+                    <fieldset class="block">
+                        <legend><h3> Shipping Address </h3></legend> 
                         Street: <input type="text" name="street"> <br>
                         City: <input type="text" name="city"> <br>
                         Zip/Postal code: <input type="text" name="zip"> <br>
                         State: <input type="text" name="state"> <br>
                         Country: <input type="text" name="country"> <br>
-                    </div>
+                    </fieldset>
                     
-                    <div class="block">
-                        <h3> Payment Information</h3>
+                    <fieldset class="block">
+                        <legend><h3> Payment Information</h3></legend> 
                         <fieldset> 
                             <legend>Payment method</legend>
                             <label><input type="radio" name="cc"> Visa</label> 
@@ -52,7 +56,7 @@
                         Credit Card Number: <input type="text" name="cnumber"> <br>
                         Expire Date: <input type="date" name="date"> <br>
                         <abbr title="see behind card">CVV:</abbr><input type="text" name="CVS"> <br>
-                    </div>
+                    </fieldset>
             
 
                 </div>
@@ -69,7 +73,11 @@
                 
                 </form>
         </div>
-       
+        
+        <div id="fixedPostion">
+			<a href="https://validator.w3.org/check/referer"><img src="./resources/images/w3c-html.png" alt="Valid HTML5"></a> <br>
+			<a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="./resources/images/w3c-css.png" alt="Valid CSS"></a>
+		</div>
 
        
     </body>

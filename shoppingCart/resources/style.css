@@ -62,7 +62,7 @@ button{
     height: 50px;
     
 }
-button[type="button"]{
+button[type="submit"]{
     font-size: 20pt;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia,serif;

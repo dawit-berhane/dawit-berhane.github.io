@@ -1,0 +1,58 @@
+.container{
+    background-color: #f2f2f2;
+    padding: 50px 50px 50px 50px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    padding: 5px 50px;
+    border:  thin solid gray;
+    border-radius: 10px;
+    margin: 25px;
+}
+.top{
+    display: flex;
+    flex: 40%;
+}
+.bottom{
+    display: flex;
+    flex: 20%;
+}
+
+.bottomblock{
+    display: flex;
+    flex: 50%;
+    margin: 25px;
+    padding: 5px 50px;
+}
+
+input[type="text"]{
+    margin-top: 10px;
+    height: 25px;
+    border-radius: 5px;
+    border: thin solid;
+}
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #DBB620;
+}
+button:hover{
+    background-color: #DBB620;
+}
+button{
+    background-color: #CADB20;
+    border: thin;
+    border-radius: 3px;
+    width: 100%;
+    height: 50px;
+    
+}
+button[type="button"]{
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia,serif;
+}

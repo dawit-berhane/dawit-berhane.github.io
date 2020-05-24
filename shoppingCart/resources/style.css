@@ -1,3 +1,9 @@
+body{
+    background-image: url("./images/banner.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
 .container{
     background-color: #f2f2f2;
     padding: 50px;
@@ -32,13 +38,14 @@
     padding: 5px 50px;
 }
 
-input[type="text"]{
+input[type="text"], input[type="password"], input[type="tel"] {
     margin-top: 10px;
     height: 25px;
     border-radius: 5px;
     border: thin solid;
     width: 100%;
 }
+
 h3{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #DBB620;

@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="container">
-            <form action="https://google.com">
+            <form action="https://google.com" method="POST">
                 <div class="top">
                     
                         
@@ -15,10 +15,10 @@
                             <legend><h3>Personal Details</h3> </legend>
                             First Name: <input type="text" name="firstname"> <br>
                             Last Name: <input type="text" name="lastname"> <br>
-                            E-mail: <input type="text" name="emial"> <br>
-                            Phone: <input type="tel" name="phone"> <br>
+                            E-mail: <input type="text" name="emial" placeholder="david@example.com"> <br>
+                            Phone: <input type="tel" name="phone" placeholder="(---) --- ----"> <br>
                             User Name: <input type="text" name="username"> <br>
-                            Password: <input type="text" name="Password"> <br>
+                            Password: <input type="password" name="Password"> <br>
                         </fieldset>
                       
                     
@@ -26,9 +26,9 @@
                     <fieldset class="block">
                        <legend><h3> Billing Address </h3></legend> 
                         Full Name: <input type="text" name="firstname"> <br>
-                        Street: <input type="text" name="street"> <br>
+                        Street: <input type="text" name="street" placeholder="1000 N 4th Street"> <br>
                         City: <input type="text" name="city"> <br>
-                        Zip/Postal code: <input type="text" name="zip"> <br>
+                        Zip/Postal code: <input type="text" name="zip" placeholder="12345" maxlength="5"> <br>
                         State: <input type="text" name="state"> <br>
                         Country: <input type="text" name="country"> <br>
                     </fieldset>
@@ -39,7 +39,7 @@
                         <legend><h3> Shipping Address </h3></legend> 
                         Street: <input type="text" name="street"> <br>
                         City: <input type="text" name="city"> <br>
-                        Zip/Postal code: <input type="text" name="zip"> <br>
+                        Zip/Postal code: <input type="text" name="zip" maxlength="5"> <br>
                         State: <input type="text" name="state"> <br>
                         Country: <input type="text" name="country"> <br>
                     </fieldset>
@@ -55,7 +55,7 @@
                         Name on Card: <input type="text" name="namecard"> <br>
                         Credit Card Number: <input type="text" name="cnumber"> <br>
                         Expire Date: <input type="date" name="date"> <br>
-                        <abbr title="see behind card">CVV:</abbr><input type="text" name="CVS"> <br>
+                        <abbr title="see behind credit card">CVV:</abbr><input type="text" name="CVS" maxlength="3"> <br>
                     </fieldset>
             
 

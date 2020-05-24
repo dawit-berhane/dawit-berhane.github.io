@@ -15,7 +15,7 @@
                             First Name: <input type="text" name="firstname" required> <br>
                             Last Name: <input type="text" name="lastname"> <br>
                             E-mail: <input type="text" name="emial" placeholder="david@example.com" required> <br>
-                            Phone: <input type="tel" name="phone" placeholder="(---) --- ----"> <br>
+                            Phone: <input type="tel" name="phone" placeholder="(641) 123 1234"> <br>
                             User Name: <input type="text" name="username" required> <br>
                             Password: <input type="password" name="Password" required> <br>
                         </fieldset>
@@ -36,11 +36,11 @@
                 <div class="top">
                     <fieldset class="block">
                         <legend><h3> Shipping Address </h3></legend> 
-                        Street: <input type="text" name="street" placeholder="1000 N 4th Street"> <br>
-                        City: <input type="text" name="city"> <br>
+                        Street: <input type="text" name="street" placeholder="1000 N 4th Street" required> <br>
+                        City: <input type="text" name="city" required> <br>
                         Zip/Postal code: <input type="text" name="zip" placeholder="12345" maxlength="5"> <br>
                         State: <input type="text" name="state"> <br>
-                        Country: <input type="text" name="country"> <br>
+                        Country: <input type="text" name="country" required> <br>
                     </fieldset>
                     
                     <fieldset class="block">
@@ -53,7 +53,7 @@
                         </fieldset> <br>
                         Name on Card: <input type="text" name="namecard" required> <br>
                         Credit Card Number: <input type="text" name="cnumber" pattern="[0-9]{16}" required> <br>
-                        Expire Date: <input type="date" name="date"> <br>
+                        Expire Date: <input type="date" name="date" required> <br>
                         <abbr title="see behind credit card">CVV:</abbr><input type="text" name="CVS" 
                                                                 maxlength="3" pattern="\d{3}" 
                                                                 title="three digit number" required> <br>

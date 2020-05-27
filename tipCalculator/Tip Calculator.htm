@@ -5,12 +5,12 @@
 	This file is a tip calculator page using JavaScript.
 	--><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script>
 function calcTip() {
-	//var subtotalElem = 
-	//var tipElem = 
+	var subtotalElem = document.getElementById('subtotal');
+	var tipElem = document.getElementById('tip');
 	var totalElem = document.getElementById('total');
-	//var subtotal = 
-	//var tip = 
-	var total = 100000;
+	var subtotal = parseInt(subtotalElem.value);
+	var tip = parseInt(tipElem.value);
+	var total = subtotal + subtotal*(tip / 100);;
 	totalElem.innerHTML = '$' + total;
 }
 

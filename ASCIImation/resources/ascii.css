@@ -1,0 +1,27 @@
+body, select, button{
+    font: bold 14pt sans-serif;
+    vertical-align: middle;
+}
+body{
+    background-color: #CCCCFF;
+}
+.controlpanel fieldset{
+    display: inline;
+    border: 5px solid black ;
+}
+.controlpanel{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#display, h1{
+    text-align: center;
+}
+h1{
+    font: bold 32pt sans-serif;
+}
+textarea{
+     width: 90%;
+     height: 400px;
+     font: bold 12pt monospace;
+}

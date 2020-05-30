@@ -70,16 +70,19 @@ function changeSize(){
 }
 
 function changeSpeed(){
-    if(turbospeed.checked){
-        delay = 50;
-        clearInterval(timer);
-        timer = setInterval(play, delay);
-
-    }else{
-        delay = 250;
-        clearInterval(timer);
-        timer = setInterval(play, delay);
+    if(startBtn.disabled){
+        if(turbospeed.checked){
+            delay = 50;
+            clearInterval(timer);
+            timer = setInterval(play, delay);
+    
+        }else{
+            delay = 250;
+            clearInterval(timer);
+            timer = setInterval(play, delay);
+        }
     }
+    
 }
 
 function playControls(btn){

@@ -1,5 +1,5 @@
 /* code by Dawit Berhane ID: 611125 -*/
-
+"use strict";
 let startBtn;
 let stopBtn;
 

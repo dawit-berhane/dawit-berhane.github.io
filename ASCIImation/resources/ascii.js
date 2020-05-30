@@ -1,4 +1,4 @@
-/* code by Dawit Berhane Legese ID: 611125 -*/
+/* code by Dawit Berhane ID: 611125 -*/
 
 let startBtn;
 let stopBtn;

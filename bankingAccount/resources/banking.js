@@ -45,9 +45,14 @@ function createAccount(){
     let account = bankAcctCreater();
     let acct = acctName.value;
     let amt = amount.value;
-    account.createAcct(acct, amt);
-    acctList.push(account);
-    displayAccts();
+    if(acct == "" || amt == ""){
+        enterValid();
+    }else{
+        account.createAcct(acct, amt);
+        acctList.push(account);
+        displayAccts();
+    }
+    
     
 }
 
@@ -61,5 +66,8 @@ function displayAccts(){
     
 }
 
+function enterValid(){
+    displayArea.value = "Enter Valid Name and amount of deposit"
+}
 
 })();

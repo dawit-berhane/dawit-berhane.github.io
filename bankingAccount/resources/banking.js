@@ -29,7 +29,7 @@ const bankAcctCreater = function(){
 };
 
 
-function load(){
+windows.onload = function(){
     btnCreate = document.getElementById('btnCreate');
     btnCreate.onclick = createAccount;
     
@@ -37,9 +37,8 @@ function load(){
     amount = document.getElementById('amount');
     
     displayArea = document.getElementById('textarea');
-}
+};
 
-window.onload = load;
 
 function createAccount(){
     let account = bankAcctCreater();

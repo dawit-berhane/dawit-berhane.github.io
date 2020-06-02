@@ -1,5 +1,7 @@
 /* code by Dawit Berhane ID: 611125 -*/
+(function(){
 "use strict";
+
 let startBtn;
 let stopBtn;
 
@@ -97,3 +99,5 @@ function playControls(btn){
         slctanimation.disabled = false;
     }
 }
+
+})();

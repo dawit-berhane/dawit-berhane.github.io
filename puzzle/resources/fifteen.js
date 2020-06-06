@@ -1,7 +1,7 @@
 let openTile = {
     x: 300,
     y: 300
-}
+};
 $(function(){
     initialPosition();
     $("#puzzlearea div").hover(isMovable);

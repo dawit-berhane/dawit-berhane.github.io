@@ -1,14 +1,16 @@
 let openTile = {
     x: 300,
     y: 300
-};
+}
 $(function(){
     initialPosition();
-    $("#puzzlearea div").hover(isMovable);
+    $("#puzzlearea div").hover(highlight);
     $("#puzzlearea div").click(move);
+    $("#shufflebutton").click(shuffle);
 });
 
-
+// initialize every piece of puzzle with positioin and 
+// background image postion
 function initialPosition(){
     $("#puzzlearea").children().each(function(){
         let num = this.innerHTML - 1;
@@ -28,43 +30,58 @@ function initialPosition(){
         
     });
 }
-
-function isMovable(current){
-    console.log(current);
-    current = $(this);
-    let isMovable = false;
-    let divX = current.data('pos').x;
-    let divY = current.data('pos').y;
-    let openX = parseInt(openTile.x);
-    let openY = parseInt(openTile.y);
-    let distance = Math.abs((divX-openX) + (divY-openY));
-    if(distance == 100){
-        current.addClass('movablepiece');
-        isMovable = true;
-    }
-    return isMovable;
-}
-
+// highlights a puzzle piece if it is movable
 function highlight(){
-    $(this).addClass('movablepiece');
-}
+    let divX = $(this).data('pos').x;
+    let divY = $(this).data('pos').y;
 
-function move(){
-    const current = $(this); 
-    if(isMovable(current)){
-    let divX = current.data('pos').x;
-    let divY = current.data('pos').y;
+    let canMove = isMovable(divX, divY);
+    
+    if(canMove){
+        $(this).addClass('movablepiece');
+    }
+    else{
+        $(this).removeClass('movablepiece')
+    }
+}
+// checks if a puzzle piece is movable or not
+//@param x and y position of puzzle piece 
+//@return returns if can be moved otherwise false
+function isMovable(x, y){
     let openX = parseInt(openTile.x);
     let openY = parseInt(openTile.y);
-    let distance = Math.abs((divX-openX) + (divY-openY));
-    current.css('left', function(idx, old){
-        return (openX)+'px';
-    });
-    current.css('top', function(idx, old){
-        return (openY)+'px';
-    });
+    let distance = Math.abs(x-openX) + Math.abs(y-openY);
+    if(distance == 100){
+        return true;
+    } 
+    else{
+        return false;
+    } 
+}
+// moves a puzzle piece to adjescent open piece if available
+function move(){
+    let divX = $(this).data('pos').x;
+    let divY = $(this).data('pos').y;
+    let canMove = isMovable(divX, divY);
+    if(canMove){
+        $(this).css('left', function(idx, old){
+            return (openTile.x)+'px';
+        });
+        $(this).css('top', function(idx, old){
+            return (openTile.y)+'px';
+        });
+        $(this).data('pos',{'x': openTile.x, 'y':openTile.y});
+        openTile.x = divX;
+        openTile.y = divY;
     }
     
-    
-   
 }
+// shuffles the puzzle 
+function shuffle(){
+    for(let i=0; i<100; i++){
+        $("#puzzlearea").children().each(function(){
+            this.click();
+        });
+    }
+}
+    

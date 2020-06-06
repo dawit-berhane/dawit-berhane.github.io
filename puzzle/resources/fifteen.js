@@ -1,3 +1,7 @@
+(function(){
+'use strict'
+
+
 let openTile = {
     x: 300,
     y: 300
@@ -84,4 +88,5 @@ function shuffle(){
         });
     }
 }
-    
+
+})();

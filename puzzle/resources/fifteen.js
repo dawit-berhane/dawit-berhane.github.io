@@ -55,7 +55,7 @@ function isMovable(x, y){
     let openX = parseInt(openTile.x);
     let openY = parseInt(openTile.y);
     let distance = Math.abs(x-openX) + Math.abs(y-openY);
-    if(distance == 100){
+    if(distance === 100){
         return true;
     } 
     else{

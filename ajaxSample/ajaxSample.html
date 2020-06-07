@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<!--
+	CSE 190 M, Summer 2012
+	Output Comparison Ajax example
+	-->
+
+	<head>
+		<title>Output Comparison Tool</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="./resources/ajaxSample.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<h1>CS472 Output Comparison Tool</h1>
+
+		<div>
+			<select id="hw">
+				<option value="" selected="selected">(choose an assignment)</option>
+				<option value="javascript.txt">Java Script</option>
+				<option value="ajax.txt">Ajax</option>
+				<option value="json.txt">JSON</option>
+			</select>
+		</div>
+
+		<div>
+			<textarea id="output" rows="30" cols="80"></textarea>
+		</div>
+	</body>
+</html>
